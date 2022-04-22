@@ -32,10 +32,10 @@ $senderName = 'Pagina Textilo';
 $recipient = 'carlos.gonzalez.utj@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
-$usernameSmtp = 'AKIARCABGFNVW3LF72TH';
+$usernameSmtp = 'noreply.blueberry@gmail.com';
 
 // Replace smtp_password with your Amazon SES SMTP password.
-$passwordSmtp = 'BEVqhBdmJNbYus2ZojNStiKQFAplf1104Y3HtusceKcu';
+$passwordSmtp = 'Blueberry0707';
 
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment or remove the next line.
@@ -44,7 +44,7 @@ $configurationSet = 'ConfigSet';
 // If you're using Amazon SES in a region other than US West (Oregon),
 // replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
 // endpoint in the appropriate region.
-$host = 'email-smtp.us-east-1.amazonaws.com';
+$host = 'smtp.gmail.com';
 $port = 587;
 
 // The subject line of the email
@@ -68,6 +68,7 @@ try {
     $mail->isSMTP();
     $mail->setFrom($sender, $senderName);
     $mail->Username   = $usernameSmtp;
+    $mail->From   = $usernameSmtp;
     $mail->Password   = $passwordSmtp;
     $mail->Host       = $host;
     $mail->Port       = $port;
