@@ -66,8 +66,9 @@ $mail = new PHPMailer(true);
 try {
     // Specify the SMTP settings.
     $mail->isSMTP();
-    $mail->From = $sender;
+    $mail->setFrom($sender, $senderName);
     $mail->Username   = $usernameSmtp;
+    $mail->From   = $usernameSmtp;
     $mail->Password   = $passwordSmtp;
     $mail->Host       = $host;
     $mail->Port       = $port;
