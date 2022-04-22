@@ -29,7 +29,7 @@ $senderName = 'Pagina Textilo';
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
-$recipient = 'blueberryweb7@gmail.com';
+$recipient = 'carlos.gonzalez.utj@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $usernameSmtp = 'AKIARCABGFNVR6EAYP44';
