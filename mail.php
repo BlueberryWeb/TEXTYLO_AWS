@@ -32,10 +32,10 @@ $senderName = 'Pagina Textilo';
 $recipient = 'carlos.gonzalez.utj@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
-$usernameSmtp = 'AKIARCABGFNVR6EAYP44';
+$usernameSmtp = 'AKIARCABGFNVW3LF72TH';
 
 // Replace smtp_password with your Amazon SES SMTP password.
-$passwordSmtp = 'BG1ZoW3ce7roxDNPx4EFTn2/WsH4+0HNgkgbYuhXOb8l';
+$passwordSmtp = 'BEVqhBdmJNbYus2ZojNStiKQFAplf1104Y3HtusceKcu';
 
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment or remove the next line.
