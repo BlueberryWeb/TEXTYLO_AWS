@@ -18,11 +18,13 @@
   <!--VIDEO DEL HEADER-->
   <section class="showcase" id="showcase">
     <header class="navbar navbar-expand-lg">
-      <div class="container-fluid menu pt-3">
+      <div class="container-fluid menu pt-3 regular">
         <div class="container">
           <div class="row pt-2">
             <div class="col-12 col-lg-2 col-sm-12 col-md-12 justify-content-center">
-              <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid ms-5" id="logo-header" /></a>
+              <a href="index.html">
+                <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid ms-5" id="logo-header" />
+              </a>
             </div>
             <div class="col-12 col-lg-3 col-sm-12 col-md-12"></div>
             <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-end whats pt-2">
@@ -31,7 +33,8 @@
             </div>
             <div class="col-12 col-lg-3 col-sm-12 col-md-12 text-end email pt-2">
               <img src="img/icono-correo-menu.png" alt="TEXTYLO" id="icono-menu" class="img-fluid me-2" />
-              <a href="mailto:">contacto@textylo.com</a>
+              <a
+                href="mailto:contacto@textylo.com.mx?Subject=Solicitar%20Cotización%20TEXTYLO">contacto@textylo.com.mx</a>
             </div>
             <div class="col-12 col-lg-1 col-sm-12 col-md-12 insta pt-2">
               <div class="text-end">
@@ -54,13 +57,14 @@
     <hr>
     <video src="vid/Video-header.mp4" muted loop autoplay></video>
   </section>
+  <a href="#" class="btn-flotante"><img src="img/top-button.png" alt=""></a>
   <!--MENU-->
   <div class="" id="menu">
     <div class="container-fluid magenta-menu">
       <h1 class="display-4">hola</h1>
     </div>
-    <div class="container-fluid azul ">
-      <div class="container">
+    <div class="container-fluid azul medium">
+      <div class="container wp-animated" data-animation="fadeInRight">
         <div class="row pt-5">
           <div class="col-12 col-lg-10 col-md-12 col-sm-12"></div>
           <div class="col-12 col-lg-2 col-md-12 col-sm-12 text-end">
@@ -121,7 +125,7 @@
             </div>
 
           </div>
-          <div class="mb-4 pt-4">
+          <div class="mb-4 pt-4 regular">
             <h5 class="text-center">© 2022 TEXTYLO. TODOS LOS DERECHOS RESERVADOS</h5>
             <div class="d-flex justify-content-center">
               <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" id="bb"
@@ -143,19 +147,22 @@
     <div class="row wp-animated-group">
       <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown"
         data-animation-duration="5s">
-        <video autoplay loop muted class="video-bg_video" style="width: 750px;">
-          <source src="vid/loop-somos.mp4" type="video/mp4">
-        </video>
+        <div class="">
+          <video autoplay loop muted class="video-bg_video" style="width: 750px;">
+            <source src="vid/loop-somos.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
       <div class="col-12 col-lg-6 col-md-12 col-sm-12 textura pt-4 wp-animated" data-animation="fadeInDown"
-        data-animation-duration="5s">
-        <h3 class="ms-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
-          data-animation-duration="5s"><b>No solo es sublimar,</b></h3>
-        <h1 class="ms-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
+        data-animation-duration="5s" id="texto-grueso">
+        <h4 class="ms-4 wp-animated bold" data-animation="fadeInDown" data-animation-delay="0.4s"
+          data-animation-duration="5s"><b>No solo es sublimar,</b></h4>
+        <h1 class="ms-4 wp-animated display-4 light" data-animation="fadeInDown" data-animation-delay="0.6s"
           data-animation-duration="5s">Es expresar <br> todo un <br>
-          <b style="color: #599edf;">u</b><b style="color: #e4cb30;">n</b><b style="color: #c5007a;">i</b><b
-            style="color: #599edf;">v</b><b style="color: #c5007a;">e</b><b style="color: #599edf;">r</b><b
-            style="color: #e4cb30;">s</b><b style="color: #c5007a;">o</b> <br>
+          <b style="color: #049DD9;" class="extra-bold">u</b><b style="color: #F2CB07;" class="extra-bold">n</b><b
+            style="color: #D9048E;" class="extra-bold">i</b><b style="color: #049DD9;" class="extra-bold">v</b><b
+            style="color: #D9048E;" class="extra-bold">e</b><b style="color: #049DD9;" class="extra-bold">r</b><b
+            style="color: #F2CB07;" class="extra-bold">s</b><b style="color: #D9048E;" class="extra-bold">o</b> <br>
           en tela.
         </h1>
         <div class="ms-4 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
@@ -170,10 +177,11 @@
   </div>
   <!--EN TEXTYLO-->
   <div class="row d-flex justify-content-center pt-5 wp-animated-group" id="ventajas">
-    <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>EN TEXTYLO</b></h4>
+    <h4 class="text-center wp-animated extra-bold" data-animation="fadeInDown" data-animation-duration="5s"><b>EN
+        TEXTYLO</b></h4>
     <hr class="textylo_hr wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
       data-animation-duration="5s">
-    <p class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
+    <p class="text-center wp-animated regular" data-animation="fadeInDown" data-animation-delay="0.4s"
       data-animation-duration="5s">Somos especialistas en sublimación, es un proceso en el cual se <br>
       transfiere alguna impresión del papel a la tela, dándole mayor <br>
       durabilidad y versatilidad siendo amigables con el medio ambiente</p>
@@ -187,8 +195,8 @@
             <img src="img/experiencia.gif" alt="TEXTYLO" class="img-fluid" />
           </div>
           <div class="card-body">
-            <h5 class="card-title text-center"><b>EXPERIENCIA</b></h5>
-            <p class="card-text text-center">MÁS DE 5 AÑOS DE <br> EXPERIENCIA EN LA <br> SUBLIMACIÓN</p>
+            <h5 class="card-title text-center bold"><b>EXPERIENCIA</b></h5>
+            <p class="card-text text-center regular">MÁS DE 5 AÑOS DE <br> EXPERIENCIA EN LA <br> SUBLIMACIÓN</p>
           </div>
         </div>
       </div>
@@ -199,8 +207,8 @@
             <img src="img/servicio.gif" alt="TEXTYLO" class="img-fluid" />
           </div>
           <div class="card-body">
-            <h5 class="card-title text-center"><b>SERVICIO</b></h5>
-            <p class="card-text text-center">ATENCIÓN Y SERVICIO <br> PERSONALIZADO PARA <br> CADA CLIENTE</p>
+            <h5 class="card-title text-center bold"><b>SERVICIO</b></h5>
+            <p class="card-text text-center regular">ATENCIÓN Y SERVICIO <br> PERSONALIZADO PARA <br> CADA CLIENTE</p>
           </div>
         </div>
       </div>
@@ -211,8 +219,9 @@
             <img src="img/calidad.gif" alt="TEXTYLO" class="img-fluid" />
           </div>
           <div class="card-body">
-            <h5 class="card-title text-center"><b>CALIDAD</b></h5>
-            <p class="card-text text-center">ENORME CALIDAD EN <br> SUBLIMACIÓN EN CADA UNO <br> DE LOS PROYECTOS</p>
+            <h5 class="card-title text-center bold"><b>CALIDAD</b></h5>
+            <p class="card-text text-center regular">ENORME CALIDAD EN <br> SUBLIMACIÓN EN CADA UNO <br> DE LOS
+              PROYECTOS</p>
           </div>
         </div>
       </div>
@@ -223,9 +232,9 @@
             <img src="img/ecologia.gif" alt="TEXTYLO" class="img-fluid" />
           </div>
           <div class="card-body">
-            <h5 class="card-title text-center"><b>ECOLÓGICO</b></h5>
-            <h6 class="card-text text-center">TAMBIÉN CONTAMOS CON <br> MATERIALES AMIGABLES <br> CON EL MEDIO AMBIENTE
-            </h6>
+            <h5 class="card-title text-center bold"><b>ECOLÓGICO</b></h5>
+            <h6 class="card-text text-center regular">TAMBIÉN CONTAMOS CON <br> MATERIALES AMIGABLES <br> CON EL MEDIO
+              AMBIENTE</h6>
           </div>
         </div>
       </div>
@@ -235,12 +244,13 @@
   <div class="container-fluid pt-5 azul pb-5">
     <div class="container">
       <div class="row wp-animated-group">
-        <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+        <div class="col-12 col-lg-2 col-md-6 col-sm-6"></div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-6">
           <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid pb-4 wp-animated" data-animation="fadeInDown"
             data-animation-duration="5s" />
-          <h1 class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
-            Podemos <br>
-            <b>sublimar</b> <br>
+          <h1 class="wp-animated light display-4" data-animation="fadeInDown" data-animation-delay="0.2s"
+            data-animation-duration="5s">Podemos <br>
+            <b class="extra-bold">sublimar</b> <br>
             todo
           </h1>
           <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
@@ -250,27 +260,400 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-lg-6 col-md-6 col-sm-6">
-          <img src="img/pillow.png" alt="TEXTYLO" width="200px" />
-          <img src="img/sudadera.png" alt="TEXTYLO" width="200px" />
+        <div class="col-12 col-lg-4 col-md-6 col-sm-6 reveal wp-animated" data-animation="fadeInRight"
+          data-animation-duration="5s">
+          <img src="img/pillow.png" alt="TEXTYLO" class="img-fluid almohada" />
+          <img src="img/sudadera.png" alt="TEXTYLO" class="img-fluid sudadera" />
         </div>
+        <div class="col-12 col-lg-2 col-md-6 col-sm-6"></div>
       </div>
     </div>
   </div>
   <!--PROMOCIONALES, ROPA DEPORTIVA, SUBLIMACIÓN, ROPA-->
   <div class="container-fluid gris pt-5 pb-5" id="aplicaciones">
-    <div class="row">
-      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
-        <img src="img/promocionales.png" alt="TEXTYLO" width="200px" />
+    <div class="container">
+      <div class="row wp-animated-group">
+        <div class="col-12 col-lg-3 col-md-6 col-sm-6">
+          <div class="promocionales wp-animated" id="ropa-tab" data-animation="zoomIn" data-animation-duration="5s">
+            <a class="texto" type="button" onclick="magenta()">PROMOCIONALES</a>
+          </div>
+          <div class="d-flex justify-content-center wp-animated" data-animation="fadeInDown"
+            data-animation-duration="5s">
+            <img src="img/flecha-magenta.png" alt="TEXTYLO" class="img-fluid" id="F-magenta" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-6">
+          <div class="trajes wp-animated" id="ropa-tab1" data-animation="zoomIn" data-animation-delay="0.5s"
+            data-animation-duration="5s">
+            <a class=" texto-1" type="button" onclick="azul()">ROPA DEPORTIVA Y <br> TRAJES DE BAÑO</a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="img/flecha-azul.png" alt="TEXTYLO" class="img-fluid" id="F-azul" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-6">
+          <div class="decorativa wp-animated" id="ropa-tab2" data-animation="zoomIn" data-animation-delay="1s"
+            data-animation-duration="5s">
+            <a class=" texto-2" type="button" onclick="amarillo()">SUBLIMACIÓN Y <br> DECORATIVA</a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="img/flecha-amarilla.png" alt="TEXTYLO" class="img-fluid" id="F-amarilla" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-6">
+          <div class="rop wp-animated" id="ropa-tab3" data-animation="zoomIn" data-animation-delay="1.5s"
+            data-animation-duration="5s">
+            <a class=" texto-3" type="button" onclick="verde()">ROPA</a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="img/flecha-verde.png" alt="TEXTYLO" class="img-fluid" id="F-verde" />
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
-        <img src="img/ropa-deportiva.png" alt="TEXTYLO" width="200px" />
-      </div>
-      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
-        <img src="img/decorativa.png" alt="TEXTYLO" width="200px" />
-      </div>
-      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
-        <img src="img/ropa.png" alt="TEXTYLO" width="200px" />
+      <div class="row">
+        <div class="container wp-animated-group " id="magenta">
+          <div class="row">
+            <div class="col-12 col-lg-2 col-md-12 col-sm-12 pt-4 wp-animated" data-animation="fadeInDown"
+              data-animation-duration="5s">
+              <div class="texto-vertical ms-5 ">
+                <h1 class="display-4" style="color: #F20587;">PROMOCIONALES</h1>
+              </div>
+            </div>
+            <div class="col-12 col-lg-10 col-md-12 col-sm-12 pt-2 magenta">
+              <div class="row">
+                <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5">
+                  <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid ms-5 wp-animated"
+                    data-animation="fadeInDown" data-animation-duration="5s" />
+                  <h1 class="pt-5 ms-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.5s"
+                    data-animation-duration="5s">Realzamos <br> <b>el poder</b> <br> de tu marca</h1>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">PLAYERAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">MANTELES <br> CORPORATIVOS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">COJINES <br> PUBLICITARIOS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">FUNDAS PARA <br> SILLAS</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">UNIFORMES</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">BANDERINES PUBLICITARIOS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">LONAS <br> Y TOLDOS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">CUBREBOCAS</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5 pb-5 wp-animated" data-animation="fadeInDown"
+                  data-animation-duration="5s">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/promocionales-flag.jpg" class="d-block w-100" alt="TEXTYLO" class="img-fluid" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/promocionales-gorras.jpg" class="d-block w-100" alt="TEXTYLO" class="img-fluid" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/promocionales-lonchera.jpg" class="d-block w-100" alt="TEXTYLO"
+                          class="img-fluid" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/promocionales-mesa.jpg" class="d-block w-100" alt="TEXTYLO" class="img-fluid" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/promocionales-mochila.jpg" class="d-block w-100" alt="TEXTYLO"
+                          class="img-fluid" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/promocionales-sombrilla.jpg" class="d-block w-100" alt="TEXTYLO"
+                          class="img-fluid" />
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container wp-animated-group " id="azul">
+          <div class="row">
+            <div class="col-12 col-lg-2 col-md-12 col-sm-12 pt-4 wp-animated" data-animation="fadeInDown"
+              data-animation-duration="5s">
+              <div class="texto-vertical ms-5 ">
+                <h1 class="display-4" style="color: #599edf;">ROPA DEPORTIVA</h1>
+              </div>
+            </div>
+            <div class="col-12 col-lg-10 col-md-12 col-sm-12 pt-2 azu">
+              <div class="row">
+                <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5">
+                  <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid ms-5 wp-animated"
+                    data-animation="fadeInDown" data-animation-duration="5s" />
+                  <h1 class="pt-5 ms-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.5s"
+                    data-animation-duration="5s">Lleva tu identidad <br> <b>en cada evento</b> <br> deportivo</h1>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">PLAYERAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">SHORTS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">PANTS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">CHAMARRAS</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">LEGGINS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">TRAJES DE BAÑO</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">GUANTES</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">TODO LO QUE <br> IMAGINES</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5 pb-5 wp-animated" data-animation="fadeInDown"
+                  data-animation-duration="5s">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/ropa-deportiva-body.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-deportiva-camisa-manga.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-deportiva-mayas.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-deportiva-camisa-tirante.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-deportiva-pants.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-deportiva-sudadera.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-deportiva-traje-baño.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container wp-animated-group " id="amarillo">
+          <div class="row">
+            <div class="col-12 col-lg-2 col-md-12 col-sm-12 pt-4 wp-animated" data-animation="fadeInDown"
+              data-animation-duration="5s">
+              <div class="texto-vertical ms-5 ">
+                <h1 class="display-2" style="color: #e4cb30;">DECORACIÓN</h1>
+              </div>
+            </div>
+            <div class="col-12 col-lg-10 col-md-12 col-sm-12 pt-2 amarillo">
+              <div class="row">
+                <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5">
+                  <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid ms-5 wp-animated"
+                    data-animation="fadeInDown" data-animation-duration="5s" />
+                  <h1 class="pt-5 ms-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.5s"
+                    data-animation-duration="5s">Llena tu vida <br> <b>de arte con</b> <br> sublimación</h1>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">CUADROS <br> DECORATIVOS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">MANTELES</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">CORTINAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">COJINES</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">ALMOHADAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">SILLONES</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">LÁMPARAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">TODO LO QUE <br> IMAGINES</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5 pb-5 wp-animated" data-animation="fadeInDown"
+                  data-animation-duration="5s">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/decoracion-cobija.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/decoracion-cojin.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/decoracion-cuadro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/decoracion-cojines.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/decoracion-lampara.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/decoracion-cuadros.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/decoracion-mandil.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/decoracion-silla.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container wp-animated-group " id="verde">
+          <div class="row">
+            <div class="col-12 col-lg-2 col-md-12 col-sm-12 pt-4  wp-animated" data-animation="fadeInDown"
+              data-animation-duration="5s">
+              <div class="texto-vertical ms-5 ">
+                <h1 class="display-4" style=" color: #56983f;">ROPA Y PRENDAS</h1>
+              </div>
+            </div>
+            <div class="col-12 col-lg-10 col-md-12 col-sm-12 pt-2 verde">
+              <div class="row">
+                <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5">
+                  <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid ms-5 wp-animated"
+                    data-animation="fadeInDown" data-animation-duration="5s" />
+                  <h1 class="pt-5 ms-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.5s"
+                    data-animation-duration="5s">Lleva las nuevas<br> <b>tendencias de moda</b> <br> contigo</h1>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">VESTIDOS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">PLAYERAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">CAMISAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">PANTALONES</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                      <ul class="pt-5 ms-4 semi-bold">
+                        <li class=" wp-animated" data-animation="fadeInDown" data-animation-delay="0.7s"
+                          data-animation-duration="5s">GORRAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.9s"
+                          data-animation-duration="5s">PASHIMINAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+                          data-animation-duration="5s">FALDAS</li>
+                        <li class="pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s"
+                          data-animation-duration="5s">TODO LO QUE <br> IMAGINES</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5 pb-5 wp-animated" data-animation="fadeInDown"
+                  data-animation-duration="5s">
+                  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/ropa-calcetin.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/ropa-camisa.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-corbata.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-playera.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-shorts.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-vestidos.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-sombreros.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/ropa-short.jpg" class="d-block w-100" alt="TEXTYLO" />
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -281,10 +664,12 @@
       <div class="col-12 col-lg-4 col-md-12 col-sm-12">
         <h1 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s">Cotiza hoy mismo <br>
           tu proyecto de <br>
-          <b style="color: #599edf;">s</b><b style="color: #e4cb30;">u</b><b style="color: #c5007a;">b</b><b
-            style="color: #599edf;">l</b><b style="color: #e4cb30;">i</b><b style="color: #c5007a;">m</b><b
-            style="color: #599edf;">a</b><b style="color: #e4cb30;">c</b><b style="color: #c5007a;">i</b><b
-            style="color: #599edf;">ó</b><b style="color: #e4cb30;">n</b>
+          <b style="color: #049DD9;" class="extra-bold">s</b><b style="color: #F2CB07;" class="extra-bold">u</b><b
+            style="color: #D9048E;" class="extra-bold">b</b><b style="color: #049DD9;" class="extra-bold">l</b><b
+            style="color: #F2CB07;" class="extra-bold">i</b><b style="color: #D9048E;" class="extra-bold">m</b><b
+            style="color: #049DD9;" class="extra-bold">a</b><b style="color: #F2CB07;" class="extra-bold">c</b><b
+            style="color: #D9048E;" class="extra-bold">i</b><b style="color: #049DD9;" class="extra-bold">ó</b><b
+            style="color: #F2CB07;" class="extra-bold">n</b>
         </h1>
       </div>
       <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-4">
@@ -347,8 +732,7 @@
         <div class="col-12 col-lg-1 col-md-12 col-sm-12"></div>
         <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5 wp-animated-group">
           <h2 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s">Comencemos <br> tu proyecto
-            <br> <b>de sublimación:</b>
-          </h2>
+            <br> <b>de sublimación:</b></h2>
           <div class="mb-3 pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
             data-animation-duration="5s">
             <img src="img/icono-Whats.png" alt="TEXTYLO" id="icono-formulario" class="img-fluid " />
@@ -358,7 +742,8 @@
           <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
             data-animation-duration="5s">
             <img src="img/icono-correo-menu.png" alt="TEXTYLO" id="icono-formulario" class="img-fluid" />
-            <a href="mailto:">contacto@textylo.com</a>
+            <a
+              href="mailto:contacto@textylo.com.mx?Subject=Solicitar%20Cotización%20TEXTYLO">contacto@textylo.com.mx</a>
           </div>
           <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
             data-animation-duration="5s">
@@ -399,7 +784,6 @@
             <div class="d-flex justify-content-center">
               <div class="g-recaptcha" data-sitekey="6LdGNygfAAAAAHjcc_-l67r1zAQ86Jf-B7mhlB6t"></div>
             </div>
-
             <div class="text-end pt-5 wp-animated-group">
               <button type="submit" class="btn btn-primary btn-enviar  wp-animated" data-animation="fadeInDown"
                 data-animation-duration="5s">Enviar</button>
@@ -451,8 +835,8 @@
         </div>
         <h6 class="text-center pt-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
           data-animation-duration="5s">
-          <a href="#" target="_blank" rel="noopener noreferrer">AVISO DE PRIVACIDAD</a> °
-          <a href="#" target="_blank" rel="noopener noreferrer">TÉRMINOS Y CONDICIONES</a>
+          <a href="aviso.html" target="_blank" rel="noopener noreferrer">AVISO DE PRIVACIDAD</a> °
+          <a href="terminos.html" target="_blank" rel="noopener noreferrer">TÉRMINOS Y CONDICIONES</a>
         </h6>
       </div>
     </div>
