@@ -732,7 +732,8 @@
         <div class="col-12 col-lg-1 col-md-12 col-sm-12"></div>
         <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5 wp-animated-group">
           <h2 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s">Comencemos <br> tu proyecto
-            <br> <b>de sublimación:</b></h2>
+            <br> <b>de sublimación:</b>
+          </h2>
           <div class="mb-3 pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
             data-animation-duration="5s">
             <img src="img/icono-Whats.png" alt="TEXTYLO" id="icono-formulario" class="img-fluid " />
@@ -860,7 +861,184 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="lib/easy-waypoint-animate.js"></script>
   <script src="lib/jquery.waypoints.js"></script>
-  <script src="js/script.js"></script>
+  <script src="">
+    function menu() {
+      document.getElementById('menu').style.display = 'block';
+      document.getElementById('showcase').style.display = 'none';
+    }
+    function cerrar() {
+      document.getElementById('showcase').style.display = 'flex';
+      document.getElementById('menu').style.display = 'none';
+    }
+    $(document).ready(function () {
+      ScrollToInit();
+      ActiveSectionNavigation();
+      InitWaypointAnimations({
+        offset: "60%",
+        animateClass: "wp-animated",
+        animateGroupClass: "wp-animated-group"
+      });
+      InitCounterWayPointAnimation();
+    });
+
+    function ScrollToInit() {
+      $(document).on("click", "a[href^='#']", function (event) {
+        var $anchor = $(this);
+        $("html, body").stop().animate({
+          scrollTop: $($anchor.attr("href")).offset().top
+        }, 1500, "easeInOutExpo");
+        event.preventDefault();
+      });
+    }
+
+    function ActiveSectionNavigation() {
+      function getNavItemsMap() {
+        const navItemsMap = $("#main-nav").find(".nav-item").map((index, item) => {
+          const $item = $(item);
+          const name = $item.find(".nav-link").attr("href").substring(1);
+          return {
+            key: name,
+            val: $item
+          };
+        })
+          .toArray()
+          .reduce((map, obj) => {
+            map[obj.key] = obj.val;
+            return map;
+          }, {});
+
+        return navItemsMap;
+      }
+
+      function deactivateCurrentNavItem() {
+        $("#main-nav").find(".nav-item.active").removeClass("active");
+      }
+
+      const navItemsMap = getNavItemsMap();
+      $("section").each((index, element) => {
+        const $element = $(element);
+        const sectionName = $element.attr("id");
+        if (sectionName in navItemsMap) {
+
+          $element.waypoint((direction) => {
+            if (direction === "down") {
+              deactivateCurrentNavItem();
+              navItemsMap[sectionName].addClass("active");
+            }
+          }, {
+            offset: "50%"
+          });
+
+          $element.waypoint((direction) => {
+            if (direction === "up") {
+              deactivateCurrentNavItem();
+              navItemsMap[sectionName].addClass("active");
+            }
+          }, {
+            offset: "-20%"
+          })
+        }
+      });
+    }
+
+    function InitCounterWayPointAnimation() {
+      $('.counter').each(function () {
+        var $this = $(this);
+        var stop = parseInt($this.text().replace(/,/g, ""));
+        $this.text(0);
+        $this.waypoint(function (direction) {
+          animateNumbers($this, 0, stop);
+          this.destroy();
+        }, {
+          triggerOnce: true,
+          offset: "80%"
+        });
+      });
+    }
+
+    function animateNumbers(element, start, stop, commas, duration, ease) {
+      var $this = element;
+      commas = (commas === undefined) ? true : commas;
+      $({ value: start }).animate({ value: stop }, {
+        duration: duration == undefined ? 4000 : duration,
+        easing: ease == undefined ? "swing" : ease,
+        step: function () {
+          $this.text(Math.floor(this.value));
+          if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+        },
+        complete: function () {
+          if (parseInt($this.text()) !== stop) {
+            $this.text(stop);
+            if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+          }
+        }
+      });
+    }
+    /*APLICACIONES */
+
+
+    function magenta() {
+      document.getElementById('magenta').style.display = 'block';
+      document.getElementById('F-magenta').style.display = 'block';
+      document.getElementById('azul').style.display = 'none';
+      document.getElementById('F-azul').style.display = 'none';
+      document.getElementById('amarillo').style.display = 'none';
+      document.getElementById('F-amarilla').style.display = 'none';
+      document.getElementById('verde').style.display = 'none';
+      document.getElementById('F-verde').style.display = 'block';
+      var str = "";
+      document.styleSheets[0].addRule('.trajes::before', 'background-color: "' + str + '";');
+    }
+    function azul() {
+      document.getElementById('azul').style.display = 'block';
+      document.getElementById('F-azul').style.display = 'block';
+      document.getElementById('magenta').style.display = 'none';
+      document.getElementById('F-magenta').style.display = 'none';
+      document.getElementById('amarillo').style.display = 'none';
+      document.getElementById('F-amarilla').style.display = 'none';
+      document.getElementById('verde').style.display = 'none';
+    }
+    function amarillo() {
+      document.getElementById('amarillo').style.display = 'block';
+      document.getElementById('F-amarilla').style.display = 'block';
+      document.getElementById('magenta').style.display = 'none';
+      document.getElementById('F-magenta').style.display = 'none';
+      document.getElementById('azul').style.display = 'none';
+      document.getElementById('F-azul').style.display = 'none';
+      document.getElementById('verde').style.display = 'none';
+      document.getElementById('F-verde').style.display = 'none';
+    }
+    function verde() {
+      document.getElementById('verde').style.display = 'block';
+      document.getElementById('F-verde').style.display = 'block';
+      document.getElementById('magenta').style.display = 'none';
+      document.getElementById('F-magenta').style.display = 'none';
+      document.getElementById('amarillo').style.display = 'none';
+      document.getElementById('F-amarilla').style.display = 'none';
+      document.getElementById('azul').style.display = 'none';
+      document.getElementById('F-azul').style.display = 'none';
+
+    }
+    /*IMÁGENES QUE ENTRAN POR UN LADO */
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+  /*TERMINA IMÁGENES QUE ENTRAN POR UN LADO */
+  </script>
 </body>
 
 </html>
