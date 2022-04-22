@@ -1,6 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*{
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: 'Monserrat Regular';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Monserrat Bold';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Monserrat ExtraBold';
+    src: url('fonts/Montserrat-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Monserrat Medium';
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'Monserrat Light';
+    src: url('fonts/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: 'Monserrat Semi-bold';
+    src: url('fonts/Montserrat-SemiBold.ttf');
+}
+.regular{
+    font-family: 'Monserrat Regular';
+}
+.bold{
+    font-family: 'Monserrat Bold';
+}
+.extra-bold{
+    font-family: 'Monserrat ExtraBold';
+}
+.medium{
+    font-family: 'Monserrat Medium';
+}
+.light{
+    font-family: 'Monserrat Light';
+}
+.semi-bold{
+    font-family: 'Monserrat Semi-bold'; 
 }
 a{
     text-decoration: none;
@@ -63,6 +101,7 @@ a{
     border-color: #F20587;
     border-radius: 20px;
     width: 200px;
+    font-family: 'Monserrat Bold';
 }
 .btn-primary a{
     color: #fff;
@@ -193,6 +232,73 @@ a{
 }
 .rop a{
     position: relative;
+    font-family: 'Monserrat Semi-bold';
+}
+.promocionales{
+    background-image: url("../img/promocionales.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.promocionales::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(197, 0, 122, 0.6);
+}
+.promocionales a{
+    position: relative;
+    font-family: 'Monserrat Semi-bold';
+}
+.trajes{
+    background-image: url("../img/ropa-deportiva.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.trajes::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(89, 158, 223, 0.6);
+}
+.trajes a{
+    position: relative;
+    font-family: 'Monserrat Semi-bold';
+}
+.decorativa{
+    background-image: url("../img/decorativa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.decorativa::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(228, 203, 48, 0.6);
+}
+.decorativa a{
+    position: relative;
+    font-family: 'Monserrat Semi-bold';
 }
 .texto{
     color: #fff;
@@ -203,7 +309,7 @@ a{
     transform: translate(-50%, 50%);
 }
 .texto:hover{
-    color: #F20587;
+    color: #fff;
 }
 .texto-1{
     color: #fff;
@@ -214,7 +320,7 @@ a{
     transform: translate(-50%, 50%);
 }
 .texto-1:hover{
-    color: #599edf;
+    color: #fff;
 }
 .texto-2{
     color: #fff;
@@ -225,18 +331,18 @@ a{
     transform: translate(-50%, 50%);
 }
 .texto-2:hover{
-    color: #e4cb30;
+    color: #fff;
 }
 .texto-3{
     color: #fff;
     position: absolute;
     top: 40%;
-    left: 60%;
+    left: 50%;
     right: 0;
     transform: translate(-50%, 50%);
 }
 .texto-3:hover{
-    color: #56983f;
+    color: #fff;
 }
 .menu_hr{
     width: 500px;
@@ -262,15 +368,15 @@ hr{
 }
 .whats{
     border-right: 1px solid #fff;
-    margin-left: 9rem;
+    margin-left: 6rem;
 }
 .email{
     border-right: 1px solid #fff;
-    margin-left: -80px;
+    margin-left: -50px;
 }
 .insta{
     border-right: 1px solid #fff;
-    margin-left: -70px;
+    margin-left: -60px;
 }
 .btn-menu{
     margin-right: 30px;
@@ -278,11 +384,99 @@ hr{
 .texto-vertical{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+    font-family: 'Monserrat ExtraBold';
 }
 .animacion-titulos{
     display: inline-block;
     animation: fadeIn;
     animation-duration: 7s;
+}
+footer a{
+    color: #454545;
+}
+.card-text{
+    font-size: 10px;
+}
+/*BOTÓN QUE SIEMPRE ESTÁ AL LADO*/
+.btn-flotante {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+  }
+.btn-flotante:hover {
+  transform: translateY(-7px);
+}
+/*TERMINA BOTÓN*/
+#F-azul, #F-verde, #F-amarilla, #amarillo, #azul, #verde{
+    display: none;
+}
+.almohada{
+    position: relative;
+    z-index: 1;
+}
+.sudadera{
+    position: absolute;
+    margin-left: -200px;
+}
+@media screen and (max-width:300px){
+    .whats{
+        margin-left: 0;
+    }
+    .email{
+        margin-left: 0;
+    }
+    .insta{
+        margin-left: 0;
+    }
+    .btn-menu{
+        margin-right: 0;
+    }
+    .video-bg_video{
+        max-width: 100px!important;
+    }
+    .showcase header{
+        padding: 0;
+    }
+    .reveal img{
+        margin-left: -100px;
+    }
+    .almohada{
+        max-width: 300px;
+    }
+    .sudadera{
+        max-width: 280px;
+    }
+}
+@media screen and (max-width:400px){
+    .whats{
+        margin-left: 0;
+    }
+    .email{
+        margin-left: 0;
+    }
+    .insta{
+        margin-left: 0;
+    }
+    .btn-menu{
+        margin-right: 0;
+    }
+    .video-bg_video{
+        max-width: 300px;
+    }
+    .showcase header{
+        padding: 0;
+    }
+    .reveal img{
+        margin-left: -100px;
+    }
+    .almohada{
+        max-width: 300px;
+    }
+    .sudadera{
+        max-width: 280px;
+    }
 }
 @media screen and (max-width:500px){
     .whats{
@@ -296,5 +490,78 @@ hr{
     }
     .btn-menu{
         margin-right: 0;
+    }
+    .video-bg_video{
+        max-width: 400px;
+    }
+    .showcase header{
+        padding: 0;
+    }
+    .reveal img{
+        margin-left: -100px;
+    }
+    .almohada{
+        max-width: 300px;
+    }
+    .sudadera{
+        max-width: 280px;
+    }
+}
+@media screen and (max-width:600px){
+    .whats{
+        margin-left: 0;
+    }
+    .email{
+        margin-left: 0;
+    }
+    .insta{
+        margin-left: 0;
+    }
+    .btn-menu{
+        margin-right: 0;
+    }
+    .video-bg_video{
+        max-width: 400px;
+    }
+    .showcase header{
+        padding: 0;
+    }
+    .reveal img{
+        margin-left: -90px;
+    }
+    .almohada{
+        max-width: 300px;
+    }
+    .sudadera{
+        max-width: 280px;
+    }
+}
+@media screen and (max-width:700px){
+    .whats{
+        margin-left: 0;
+    }
+    .email{
+        margin-left: 0;
+    }
+    .insta{
+        margin-left: 0;
+    }
+    .btn-menu{
+        margin-right: 0;
+    }
+    .video-bg_video{
+        max-width: 600px;
+    }
+    .showcase header{
+        padding: 0;
+    }
+    .reveal img{
+        margin-left: -90px;
+    }
+    .almohada{
+        max-width: 300px;
+    }
+    .sudadera{
+        max-width: 300px;
     }
 }

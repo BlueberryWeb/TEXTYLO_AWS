@@ -92,7 +92,6 @@ $(document).ready(function() {
     });  
   }
   
-  
   function animateNumbers(element, start, stop, commas, duration, ease) {
     var $this = element;
     commas = (commas === undefined) ? true : commas;
@@ -111,4 +110,67 @@ $(document).ready(function() {
         }
     });
   }
+  /*APLICACIONES */
+
+
+  function magenta(){
+    document.getElementById('magenta').style.display = 'block';
+    document.getElementById('F-magenta').style.display = 'block';
+    document.getElementById('azul').style.display = 'none';
+    document.getElementById('F-azul').style.display = 'none';
+    document.getElementById('amarillo').style.display = 'none';
+    document.getElementById('F-amarilla').style.display = 'none';
+    document.getElementById('verde').style.display = 'none';
+    document.getElementById('F-verde').style.display = 'block';
+    var str = "";
+    document.styleSheets[0].addRule('.trajes::before','background-color: "'+str+'";');
+  }
+  function azul(){
+    document.getElementById('azul').style.display = 'block';
+    document.getElementById('F-azul').style.display = 'block';
+    document.getElementById('magenta').style.display = 'none';
+    document.getElementById('F-magenta').style.display = 'none';
+    document.getElementById('amarillo').style.display = 'none';
+    document.getElementById('F-amarilla').style.display = 'none';
+    document.getElementById('verde').style.display = 'none';
+  }
+  function amarillo(){
+    document.getElementById('amarillo').style.display = 'block';
+    document.getElementById('F-amarilla').style.display = 'block';
+    document.getElementById('magenta').style.display = 'none';
+    document.getElementById('F-magenta').style.display = 'none';
+    document.getElementById('azul').style.display = 'none';
+    document.getElementById('F-azul').style.display = 'none';
+    document.getElementById('verde').style.display = 'none';
+    document.getElementById('F-verde').style.display = 'none';
+  }
+  function verde(){
+    document.getElementById('verde').style.display = 'block';
+    document.getElementById('F-verde').style.display = 'block';
+    document.getElementById('magenta').style.display = 'none';
+    document.getElementById('F-magenta').style.display = 'none';
+    document.getElementById('amarillo').style.display = 'none';
+    document.getElementById('F-amarilla').style.display = 'none';
+    document.getElementById('azul').style.display = 'none';
+    document.getElementById('F-azul').style.display = 'none';
+
+  }
+  /*IMÁGENES QUE ENTRAN POR UN LADO */
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
   
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+  /*TERMINA IMÁGENES QUE ENTRAN POR UN LADO */
