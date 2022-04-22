@@ -21,7 +21,7 @@
   $mail->SMTPAuth = true; // Enable SMTP authentication
   $mail->Username = 'postmaster@blueberryvideo.mx	'; // SMTP username from https://mailgun.com/cp/domains
   $mail->Password = '96d02e124989a8610209bdda9eb20a3c-38029a9d-7e4583da'; // SMTP password from https://mailgun.com/cp/domains
-  $mail->SMTPSecure = 'tls';   // Enable encryption, 'ssl'
+  $mail->SMTPSecure = 'ssl';   // Enable encryption, 'ssl'
   $mail->Port= '587';
   $mail->From = 'postmaster@blueberryvideo.mx	'; // The FROM field, the address sending the email 
   $mail->FromName = 'Blueberry'; // The NAME field which will be displayed on arrival by the email client
