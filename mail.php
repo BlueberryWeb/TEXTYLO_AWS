@@ -65,7 +65,9 @@ $bodyHtml = '<h1>Email Test</h1>
     <p>This email was sent through the
     <a href="https://aws.amazon.com/ses">Amazon SES</a> SMTP
     interface using the <a href="https://github.com/PHPMailer/PHPMailer">
-    PHPMailer</a> class.</p>';
+    PHPMailer</a> class.</p>
+    
+    ';
 
 $mail = new PHPMailer(true); 
 
@@ -88,7 +90,7 @@ try {
     // You can also add CC, BCC, and additional To recipients here.
 
     // Specify the content of the message.
-    // $mail->isHTML(true);
+    $mail->isHTML(true);
     $mail->Subject    = $subject;
     $mail->Body       = $bodyHtml;
     $mail->AltBody    = $bodyText;
