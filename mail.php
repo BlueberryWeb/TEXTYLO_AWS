@@ -31,7 +31,7 @@ require './vendor/autoload.php';
 
 // Replace sender@example.com with your "From" address.
 // This address must be verified with Amazon SES.
-$sender = 'noreply.blueberry@gmail.com';
+$sender = 'pruebas.blueberry2@gmail.com';
 $senderName = 'Pagina Textilo';
 
 // Replace recipient@example.com with a "To" address. If your account
