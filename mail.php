@@ -24,12 +24,12 @@ require 'PHPMailer/src/SMTP.php';
 
 // Replace sender@example.com with your "From" address.
 // This address must be verified with Amazon SES.
-$sender = 'sender@example.com';
-$senderName = 'Sender Name';
+$sender = 'noreply.blueberry@gmail.com';
+$senderName = 'Pagina Textilo';
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
-$recipient = 'recipient@example.com';
+$recipient = 'blueberryweb7@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $usernameSmtp = 'AKIARCABGFNVR6EAYP44';
@@ -85,6 +85,7 @@ try {
     $mail->Body       = $bodyHtml;
     $mail->AltBody    = $bodyText;
     $mail->Send();
+    sleep(5);
     echo "Email sent!" , PHP_EOL;
 } catch (phpmailerException $e) {
     echo "An error occurred. {$e->errorMessage()}", PHP_EOL; //Catch errors from PHPMailer.
@@ -105,43 +106,3 @@ try {
 
 
 
-<!-- use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
-
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$mensaje = $_POST['mensaje'];
-
-
-$mail = new PHPMailer;
-$mail->isSMTP();
-$mail->SMTPDebug = 0;
-$mail->Host = 'email-smtp.us-east-1.amazonaws.com';
-$mail->Port = 587;
-$mail->SMTPSecure = 'tls';
-$mail->SMTPAuth   = true;
-$mail->Username   = 'AKIARCABGFNVR6EAYP44';
-$mail->Password   = 'BG1ZoW3ce7roxDNPx4EFTn2/WsH4+0HNgkgbYuhXOb8l';
-$mail->setFrom('noreply@textylo.com', 'Info');
-$mail->addAddress('blueberryweb7@gmail.com');
-$mail->addAddress('notificaciones.goodlock@gmail.com');
-$mail->addAddress('carlos.gonzalez.utj@gmail.com');
-$mail->Subject = 'Mensaje de la pagina';
-$mail->MsgHTML($message);
-
-sleep(5);
-
-if(!$mail->send()) {  
-    echo "Message hasn't been sent.";
-    echo 'Mailer Error: ' . $mail->ErrorInfo . "n";
-} else {
-  // sleep(10);
-  echo "Mensaje enviado";
-//   header("Location: {$_SERVER['HTTP_REFERER']}"); 
-exit;
-} -->
