@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/4514d9060c.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/textylo-favicon.png" />
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>TEXTYLO</title>
+</head>
+
+<body>
+  <!--VIDEO DEL HEADER-->
+  <section class="showcase" id="showcase">
+    <header class="navbar navbar-expand-lg">
+      <div class="container-fluid menu pt-3">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-12 col-lg-2 col-sm-12 col-md-12 justify-content-center">
+              <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid ms-5" id="logo-header" /></a>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-12 col-md-12"></div>
+            <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-end whats pt-2">
+              <img src="img/icono-Whats.png" alt="TEXTYLO" id="icono-menu" class="img-fluid me-2" />
+              <a href="https://api.whatsapp.com/send?phone=5554360428">555 436 0428</a>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-12 col-md-12 text-end email pt-2">
+              <img src="img/icono-correo-menu.png" alt="TEXTYLO" id="icono-menu" class="img-fluid me-2" />
+              <a href="mailto:">contacto@textylo.com</a>
+            </div>
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 insta pt-2">
+              <div class="text-end">
+                <a href="https://www.instagram.com/textylomexico" target="_blank" rel="noopener noreferrer">
+                  <img src="img/icono-IG-menu.png" alt="TEXTYLO" id="icono-menu" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-1">
+              <div class="text-end btn-menu">
+                <button class="btn btn-outline " onclick="menu()">
+                  <img src="img/burger-menu.png" alt="MENÚ" class="img-fluid " />
+              </div>
+            </div>
+            <hr class="mt-3">
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr>
+    <video src="vid/Video-header.mp4" muted loop autoplay></video>
+  </section>
+  <!--MENU-->
+  <div class="" id="menu">
+    <div class="container-fluid magenta-menu">
+      <h1 class="display-4">hola</h1>
+    </div>
+    <div class="container-fluid azul ">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-12 col-lg-10 col-md-12 col-sm-12"></div>
+          <div class="col-12 col-lg-2 col-md-12 col-sm-12 text-end">
+            <button class="btn close" onclick="cerrar()">
+              <img src="img/btn-close.png" alt="CLOSE" class="img-fluid btn-close" />
+            </button>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center pt-2">
+          <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid " id="logo-menu" />
+          <div class="mb-3 pt-5 text-center">
+            <div class="row d-flex justify-content-center">
+              <a href="#showcase">
+                <h1> INICIO</h1>
+              </a>
+              <hr class="menu_hr">
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <div class="row d-flex justify-content-center">
+              <a href="#somos">
+                <h1>SOMOS</h1>
+              </a>
+              <hr class="menu_hr">
+            </div>
+
+          </div>
+          <div class="mb-3 text-center">
+            <div class="row d-flex justify-content-center">
+              <a href="#ventajas">
+                <h1>VENTAJAS</h1>
+              </a>
+              <hr class="menu_hr">
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <div class="row d-flex justify-content-center">
+              <a href="#aplicaciones">
+                <h1>APLICACIONES</h1>
+              </a>
+              <hr class="menu_hr">
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <div class="row d-flex justify-content-center">
+              <a href="#servicios">
+                <h1>SERVICIOS</h1>
+              </a>
+              <hr class="menu_hr">
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <div class="row d-flex justify-content-center">
+              <a href="#contacto">
+                <h1>CONTACTO</h1>
+              </a>
+              <hr class="menu_hr">
+            </div>
+
+          </div>
+          <div class="mb-4 pt-4">
+            <h5 class="text-center">© 2022 TEXTYLO. TODOS LOS DERECHOS RESERVADOS</h5>
+            <div class="d-flex justify-content-center">
+              <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" id="bb"
+                class="img-fluid pt-2 pb-3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TERMINA EL MENU-->
+  <!--LOGO-->
+  <div class="row d-flex justify-content-center pt-5 pb-5 wp-animated-group" id="somos">
+    <img src="img/logo-textylo-colores.gif" alt="TEXTYLO" id="logo-colores" class="img-fluid wp-animated"
+      data-animation="fadeInDown" data-animation-duration="5s" />
+  </div>
+  <!--NO ES SUBLIMAR, ES EXPRESAR TODO UN UNIVERSO EN TELA VIDEO-->
+  <div class="container-fluid">
+    <div class="row wp-animated-group">
+      <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown"
+        data-animation-duration="5s">
+        <video autoplay loop muted class="video-bg_video" style="width: 750px;">
+          <source src="vid/loop-somos.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-12 col-lg-6 col-md-12 col-sm-12 textura pt-4 wp-animated" data-animation="fadeInDown"
+        data-animation-duration="5s">
+        <h3 class="ms-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
+          data-animation-duration="5s"><b>No solo es sublimar,</b></h3>
+        <h1 class="ms-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
+          data-animation-duration="5s">Es expresar <br> todo un <br>
+          <b style="color: #599edf;">u</b><b style="color: #e4cb30;">n</b><b style="color: #c5007a;">i</b><b
+            style="color: #599edf;">v</b><b style="color: #c5007a;">e</b><b style="color: #599edf;">r</b><b
+            style="color: #e4cb30;">s</b><b style="color: #c5007a;">o</b> <br>
+          en tela.
+        </h1>
+        <div class="ms-4 wp-animated" data-animation="fadeInDown" data-animation-delay="1s"
+          data-animation-duration="5s">
+          <button class="btn btn-primary">
+            <a href="https://api.whatsapp.com/send?phone=5554360428" target="_blank" rel="noopener noreferrer">555 436
+              0428</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--EN TEXTYLO-->
+  <div class="row d-flex justify-content-center pt-5 wp-animated-group" id="ventajas">
+    <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>EN TEXTYLO</b></h4>
+    <hr class="textylo_hr wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
+      data-animation-duration="5s">
+    <p class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
+      data-animation-duration="5s">Somos especialistas en sublimación, es un proceso en el cual se <br>
+      transfiere alguna impresión del papel a la tela, dándole mayor <br>
+      durabilidad y versatilidad siendo amigables con el medio ambiente</p>
+  </div>
+  <!--EXPERIENCIA, SERVICIO, CALIDAD, ECOLÓGICO-->
+  <div class="container pb-5 pt-4">
+    <div class="row wp-animated-group">
+      <div class="col-12 col-lg-2 col-md-12 col-sm-12">
+        <div class="card wp-animated" data-animation="zoomIn" data-animation-duration="5s">
+          <div class="card-header">
+            <img src="img/experiencia.gif" alt="TEXTYLO" class="img-fluid" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center"><b>EXPERIENCIA</b></h5>
+            <p class="card-text text-center">MÁS DE 5 AÑOS DE <br> EXPERIENCIA EN LA <br> SUBLIMACIÓN</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+      <div class="col-12 col-lg-2 col-md-12 col-sm-12">
+        <div class="card wp-animated" data-animation="zoomIn" data-animation-delay="1s" data-animation-duration="5s">
+          <div class="card-header">
+            <img src="img/servicio.gif" alt="TEXTYLO" class="img-fluid" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center"><b>SERVICIO</b></h5>
+            <p class="card-text text-center">ATENCIÓN Y SERVICIO <br> PERSONALIZADO PARA <br> CADA CLIENTE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+      <div class="col-12 col-lg-2 col-md-12 col-sm-12">
+        <div class="card wp-animated" data-animation="zoomIn" data-animation-delay="2s" data-animation-duration="5s">
+          <div class="card-header">
+            <img src="img/calidad.gif" alt="TEXTYLO" class="img-fluid" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center"><b>CALIDAD</b></h5>
+            <p class="card-text text-center">ENORME CALIDAD EN <br> SUBLIMACIÓN EN CADA UNO <br> DE LOS PROYECTOS</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+      <div class="col-12 col-lg-2 col-md-12 col-sm-12">
+        <div class="card wp-animated" data-animation="zoomIn" data-animation-delay="2.8s" data-animation-duration="5s">
+          <div class="card-header">
+            <img src="img/ecologia.gif" alt="TEXTYLO" class="img-fluid" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center"><b>ECOLÓGICO</b></h5>
+            <h6 class="card-text text-center">TAMBIÉN CONTAMOS CON <br> MATERIALES AMIGABLES <br> CON EL MEDIO AMBIENTE
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--PODEMOS SUBLIMAR TODO-->
+  <div class="container-fluid pt-5 azul pb-5">
+    <div class="container">
+      <div class="row wp-animated-group">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+          <img src="img/textylo-logo.png" alt="TEXTYLO" class="img-fluid pb-4 wp-animated" data-animation="fadeInDown"
+            data-animation-duration="5s" />
+          <h1 class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
+            Podemos <br>
+            <b>sublimar</b> <br>
+            todo
+          </h1>
+          <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
+            <button class="btn btn-primary">
+              <a href="https://api.whatsapp.com/send?phone=5554360428" target="_blank" rel="noopener noreferrer">555 436
+                0428</a>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+          <img src="img/pillow.png" alt="TEXTYLO" width="200px" />
+          <img src="img/sudadera.png" alt="TEXTYLO" width="200px" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--PROMOCIONALES, ROPA DEPORTIVA, SUBLIMACIÓN, ROPA-->
+  <div class="container-fluid gris pt-5 pb-5" id="aplicaciones">
+    <div class="row">
+      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+        <img src="img/promocionales.png" alt="TEXTYLO" width="200px" />
+      </div>
+      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+        <img src="img/ropa-deportiva.png" alt="TEXTYLO" width="200px" />
+      </div>
+      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+        <img src="img/decorativa.png" alt="TEXTYLO" width="200px" />
+      </div>
+      <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+        <img src="img/ropa.png" alt="TEXTYLO" width="200px" />
+      </div>
+    </div>
+  </div>
+  <!--COTIZA HOY MISMO-->
+  <div class="container pt-5 pb-5">
+    <div class="row wp-animated-group">
+      <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
+      <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+        <h1 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s">Cotiza hoy mismo <br>
+          tu proyecto de <br>
+          <b style="color: #599edf;">s</b><b style="color: #e4cb30;">u</b><b style="color: #c5007a;">b</b><b
+            style="color: #599edf;">l</b><b style="color: #e4cb30;">i</b><b style="color: #c5007a;">m</b><b
+            style="color: #599edf;">a</b><b style="color: #e4cb30;">c</b><b style="color: #c5007a;">i</b><b
+            style="color: #599edf;">ó</b><b style="color: #e4cb30;">n</b>
+        </h1>
+      </div>
+      <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-4">
+        <h5 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s">Envíanos un Whatsapp, <br>
+          estamos para ayudarte: <br></h5>
+        <div class="pt-2 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
+          data-animation-duration="5s">
+          <button class="btn btn-primary">
+            <a href="https://api.whatsapp.com/send?phone=5554360428" target="_blank" rel="noopener noreferrer">555 436
+              0428</a>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
+    </div>
+  </div>
+  <!--TODO LO QUE IMAGINES SE PUEDE SUBLIMAR-->
+  <section class="showcase wp-animated-group">
+    <video src="vid/loop-calandra.mp4" muted loop autoplay class="wp-animated" data-animation="fadeInDown"
+      data-animation-duration="5s"></video>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="text">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <h1 class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
+                data-animation-duration="5s">Todo lo que imagines <br>
+                <b>se puede sublimar</b>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--NUESTROS SERVICIOS-->
+  <div class="container-fluid serv wp-animated-group" id="servicios">
+    <div class="row d-flex justify-content-center pt-5">
+      <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>NUESTROS
+          SERVICIOS</b></h4>
+      <hr class="serv_hr wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
+        data-animation-duration="5s">
+      <p class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
+        data-animation-duration="5s">En Textylo contamos con diferentes servicios para <br> ofrecerte la mejor solución
+        a tu necesidad</p>
+    </div>
+    <div class="container pb-5 pt-3 serv">
+      <div class="row d-flex justify-content-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s"
+        data-animation-duration="5s">
+        <video autoplay loop muted class="video-bg_video" style="width: 1200px;">
+          <source src="vid/loop-servicios.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  <!--FORMULARIO-->
+  <div class="container-fluid azul pt-5 pb-5" id="contacto">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12 col-lg-1 col-md-12 col-sm-12"></div>
+        <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5 wp-animated-group">
+          <h2 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s">Comencemos <br> tu proyecto
+            <br> <b>de sublimación:</b>
+          </h2>
+          <div class="mb-3 pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
+            data-animation-duration="5s">
+            <img src="img/icono-Whats.png" alt="TEXTYLO" id="icono-formulario" class="img-fluid " />
+            <a href="https://api.whatsapp.com/send?phone=5554360428" target="_blank" rel="noopener noreferrer">555 436
+              0428</a>
+          </div>
+          <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
+            data-animation-duration="5s">
+            <img src="img/icono-correo-menu.png" alt="TEXTYLO" id="icono-formulario" class="img-fluid" />
+            <a href="mailto:">contacto@textylo.com</a>
+          </div>
+          <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
+            data-animation-duration="5s">
+            <img src="img/icono-ubicacion.png" alt="TEXTYLO" id="icono-formulario" class="img-fluid ubicacion" />
+            <a href="https://goo.gl/maps/qv47mSBNf4m5NtMi8" target="_blank" rel="noopener noreferrer">
+              Luis Braile 106, Colonia San Simón <br>
+              Ticuman, Benito Juárez, CDMX.
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 col-md-12 col-sm-12">
+          <form method="post" action="prueba.php" class="pt-5 form-contacto" onsubmit="miFuncion()">
+            <div class="mb-3 wp-animated-group">
+              <label for="exampleFormControlInput1" class="form-label wp-animated" data-animation="fadeInDown"
+                data-animation-duration="5s">NOMBRE</label>
+              <input type="text" class="form-control borde-bottom  wp-animated" id="nombre" name="nombre" required
+                data-animation="fadeInDown" data-animation-delay="0.5s" data-animation-duration="3s">
+            </div>
+            <div class="mb-3 wp-animated-group">
+              <label for="exampleFormControlInput1" class="form-label  wp-animated" data-animation="fadeInDown"
+                data-animation-duration="5s">CORREO ELECTRÓNICO</label>
+              <input type="email" class="form-control borde-bottom  wp-animated" id="email" name="email" required
+                data-animation="fadeInDown" data-animation-delay="0.5s" data-animation-duration="3s">
+            </div>
+            <div class="mb-3 wp-animated-group">
+              <label for="exampleFormControlInput1" class="form-label  wp-animated" data-animation="fadeInDown"
+                data-animation-duration="5s">TELÉFONO</label>
+              <input type="text" class="form-control borde-bottom  wp-animated" id="telefono" name="telefono" required
+                data-animation="fadeInDown" data-animation-delay="0.5s" data-animation-duration="3s">
+            </div>
+            <div class="mb-3 wp-animated-group">
+              <label for="exampleFormControlTextarea1" class="form-label  wp-animated" data-animation="fadeInDown"
+                data-animation-duration="5s">MENSAJE</label>
+              <textarea required class="form-control borde-bottom  wp-animated" id="mensaje" rows="3" name="mensaje"
+                data-animation="fadeInDown" data-animation-delay="0.5s" data-animation-duration="3s"></textarea>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+              <div class="g-recaptcha" data-sitekey="6LdGNygfAAAAAHjcc_-l67r1zAQ86Jf-B7mhlB6t"></div>
+            </div>
+
+            <div class="text-end pt-5 wp-animated-group">
+              <button type="submit" class="btn btn-primary btn-enviar  wp-animated" data-animation="fadeInDown"
+                data-animation-duration="5s">Enviar</button>
+            </div>
+          </form>
+          <script>
+            function miFuncion() {
+              var response = grecaptcha.getResponse();
+
+              if (response.length == 0) {
+
+                // window.alert("Favor de llenar el captcha");
+                Swal.fire({
+                  title: 'Error',
+                  text: 'El campo "No soy un robot" no esta seleccionado',
+                  icon: 'error',
+                  confirmButtonText: 'Ok',
+                  confirmButtonColor: '#000000',
+                })
+                event.preventDefault();
+                // window.history.back();       
+              } else {
+
+                Swal.fire(
+                  'Correo enviado',
+                  'Nos pondremos en contacto contigo a la brevedad',
+                  'success'
+                )
+              }
+            }
+          </script>
+        </div>
+        <div class="col-12 col-lg-1 col-md-12 col-sm-12"></div>
+      </div>
+    </div>
+  </div>
+  <footer class="wp-animated-group">
+    <div class="container pt-5 ">
+      <div class="row d-flex justify-content-center ">
+        <img src="img/logo-textylo-colores.gif" alt="TEXTYLO" id="logo-colores" class="img-fluid wp-animated"
+          data-animation="fadeInDown" data-animation-duration="5s" />
+        <div class="pt-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
+          data-animation-duration="5s">
+          <a href="https://www.instagram.com/textylomexico" target="_blank" rel="noopener noreferrer">
+            <div class="d-flex justify-content-center">
+              <img src="img/icono-IG.png" alt="TEXTYLO" class="img-fluid" id="icono-foot" />
+            </div>
+          </a>
+        </div>
+        <h6 class="text-center pt-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s"
+          data-animation-duration="5s">
+          <a href="#" target="_blank" rel="noopener noreferrer">AVISO DE PRIVACIDAD</a> °
+          <a href="#" target="_blank" rel="noopener noreferrer">TÉRMINOS Y CONDICIONES</a>
+        </h6>
+      </div>
+    </div>
+    <div class="container-fuid">
+      <div class="row d-flex justify-content-center gris pt-4">
+        <h5 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
+          data-animation-duration="5s">© 2022 TEXTYLO. TODOS LOS DERECHOS RESERVADOS</h5>
+        <img src="img/materialized-negro.gif" alt="MATERIALIZED BY Blueberry" id="bb"
+          class="img-fluid pt-2 pb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s"
+          data-animation-duration="5s" />
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="lib/easy-waypoint-animate.js"></script>
+  <script src="lib/jquery.waypoints.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
