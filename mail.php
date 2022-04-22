@@ -68,7 +68,7 @@ try {
     $mail->isSMTP();
     $mail->setFrom($sender, $senderName);
     $mail->Username   = $usernameSmtp;
-    $mail->From   = $sender;
+    $mail->From   = $usernameSmtp;
     $mail->Password   = $passwordSmtp;
     $mail->Host       = $host;
     $mail->Port       = $port;
