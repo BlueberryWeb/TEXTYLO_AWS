@@ -86,7 +86,8 @@ try {
     $mail->AltBody    = $bodyText;
     $mail->Send();
     sleep(5);
-    echo "Email sent!" , PHP_EOL;
+    header("Location: {$_SERVER['HTTP_REFERER']}");
+
 } catch (phpmailerException $e) {
     echo "An error occurred. {$e->errorMessage()}", PHP_EOL; //Catch errors from PHPMailer.
 } catch (Exception $e) {
