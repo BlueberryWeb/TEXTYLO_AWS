@@ -15,16 +15,11 @@
  */
 
 
-$nombre = trim($_POST['nombre']);
-$email = trim($_POST['email']);
-$telefono = trim($_POST['telefono']);
-$mensaje = trim($_POST['mensaje']);
+  $nombre = trim($_POST['nombre']);
+  $email = trim($_POST['email']);
+  $telefono = trim($_POST['telefono']);
+  $mensaje = trim($_POST['mensaje']);
 
-$message = file_get_contents('correo.php');
-$message = str_replace('%nombre%', $nombre, $message);
-$message = str_replace('%email%', $email, $message);
-$message = str_replace('%telefono%', $telefono, $message);
-$message = str_replace('%mensaje%', $mensaje, $message);
 
 // Import PHPMailer classes into the global namespace.
 use PHPMailer\PHPMailer\PHPMailer;
@@ -93,9 +88,11 @@ try {
     // You can also add CC, BCC, and additional To recipients here.
 
     // Specify the content of the message.
-    $mail->isHTML(true);
+    // $mail->isHTML(true);
     $mail->Subject    = $subject;
-    $mail->MsgHTML($message);
+    $mail->Body       = $bodyHtml;
+    $mail->AltBody    = $bodyText;
+    $mail->Send();
     sleep(5);
     header("Location: {$_SERVER['HTTP_REFERER']}");
 
