@@ -73,7 +73,6 @@ try {
     $mail->Port       = $port;
     $mail->SMTPAuth   = true;
     $mail->SMTPSecure = 'tls';
-    $mail->SMTPDebug = true;
     $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
 
     // Specify the message recipients.
@@ -81,7 +80,7 @@ try {
     // You can also add CC, BCC, and additional To recipients here.
 
     // Specify the content of the message.
-    $mail->isHTML(true);
+    // $mail->isHTML(true);
     $mail->Subject    = $subject;
     $mail->Body       = $bodyHtml;
     $mail->AltBody    = $bodyText;
