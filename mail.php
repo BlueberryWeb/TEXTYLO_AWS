@@ -76,7 +76,6 @@ $bodyHtml = '
   <title></title>
 </head>
 <body style="margin:0;padding:0;">
-<center>
   <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
     <tr>
       <td style="padding:0;">
@@ -123,7 +122,6 @@ $bodyHtml = '
                   </td>
                 </tr>
               </table>
-              </center>
             </td>
           </tr>
           <tr>
@@ -141,7 +139,6 @@ $bodyHtml = '
       </td>
     </tr>
   </table>
-  
 </body>
 
 </html>
