@@ -14,6 +14,18 @@
  * specific language governing permissions and limitations under the License.
  */
 
+
+$nombre = trim($_POST['nombre']);
+$email = trim($_POST['email']);
+$telefono = trim($_POST['telefono']);
+$mensaje = trim($_POST['mensaje']);
+
+$message = file_get_contents('correo.php');
+$message = str_replace('%nombre%', $nombre, $message);
+$message = str_replace('%email%', $email, $message);
+$message = str_replace('%telefono%', $telefono, $message);
+$message = str_replace('%mensaje%', $mensaje, $message);
+
 // Import PHPMailer classes into the global namespace.
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -48,11 +60,10 @@ $host = 'smtp.gmail.com';
 $port = 587;
 
 // The subject line of the email
-$subject = 'Amazon SES test (SMTP interface accessed using PHP)';
+$subject = 'Mensaje de textilo en la web';
 
 // The plain-text body of the email
-$bodyText =  "Email Test\r\nThis email was sent through the
-    Amazon SES SMTP interface using the PHPMailer class.";
+$bodyText =  "Correo de la web";
 
 // The HTML-formatted body of the email
 $bodyHtml = '<h1>Email Test</h1>
@@ -82,11 +93,9 @@ try {
     // You can also add CC, BCC, and additional To recipients here.
 
     // Specify the content of the message.
-    // $mail->isHTML(true);
+    $mail->isHTML(true);
     $mail->Subject    = $subject;
-    $mail->Body       = $bodyHtml;
-    $mail->AltBody    = $bodyText;
-    $mail->Send();
+    $mail->MsgHTML($message);
     sleep(5);
     header("Location: {$_SERVER['HTTP_REFERER']}");
 
