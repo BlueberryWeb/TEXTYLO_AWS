@@ -458,6 +458,12 @@ footer a{
     .sudadera{
         max-width: 280px;
     }
+    .showcase video{
+        object-fit: fill;
+    }
+    .text-video{
+        margin-left: -110px;
+    }
 }
 @media screen and (max-width:400px){
     .whats{
@@ -483,6 +489,12 @@ footer a{
     }
     .sudadera{
         max-width: 280px;
+    }
+    .showcase video{
+        object-fit: fill;
+    }
+    .text-video{
+        margin-left: -110px;
     }
 }
 @media screen and (max-width:500px){
@@ -510,6 +522,12 @@ footer a{
     .sudadera{
         max-width: 280px;
     }
+    .showcase video{
+        object-fit: fill;
+    }
+    .text-video{
+        margin-left: -110px;
+    }
 }
 @media screen and (max-width:600px){
     .whats{
@@ -536,6 +554,12 @@ footer a{
     .sudadera{
         max-width: 280px;
     }
+    .showcase video{
+        object-fit: fill;
+    }
+    .text-video{
+        margin-left: -110px;
+    }
 }
 @media screen and (max-width:700px){
     .whats{
@@ -561,5 +585,11 @@ footer a{
     }
     .sudadera{
         max-width: 300px;
+    }
+    .showcase video{
+        object-fit: fill;
+    }
+    .text-video{
+        margin-left: -110px;
     }
 }
