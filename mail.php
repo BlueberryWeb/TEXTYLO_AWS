@@ -92,13 +92,13 @@ $bodyHtml = '
               <table role="presentation" style="font-family: , sans-serif; width:100%;border-collapse:collapse;border:0;border-spacing:0;">
                 <tr>
                   <td style="font-family: , sans-serif; padding:0 0 36px 0;color:#153643;">
-                    <h1 style="background: -webkit-linear-gradient(79.33deg,#810CCE 19.6%,#EE1796 80.4%);-webkit-text-fill-color: transparent;-webkit-background-clip: text;font-size: 3.5rem; text-align: center;">NUEVO CONTACTO</h1>
-
+                  <img src="https://i.postimg.cc/k4Jn15MD/Nuevo-Contacto.png" alt="NUEVO CONTACTO" style="max-width: 500px; margin-left: 50px; margin-bottom: 60px; margin-top: 20px;"/>
+                  <center>
                     <h4 style="margin:0 0 12px 0;font-size: 20px; text-align: center; font-family: , sans-serif;">Se ha capturado un nuevo lead en <b style="font-weight: 600; color: black;">TEXTYLO</b></h4>
 
                   </td>
                 </tr>
-                <center>
+                
                 <tr>
                       <td style="padding:0;">
                         <table role="presentation" style="font-family: , sans-serif; width:100%;border-collapse:collapse;border:0;border-spacing:0;">
