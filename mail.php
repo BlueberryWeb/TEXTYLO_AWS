@@ -10,8 +10,8 @@ use PHPMailer\PHPMailer\Exception;
 
 require './vendor/autoload.php';
 
-$sender = 'noreply.textylo@gmail.com';
-$senderName = 'Pagina TEXTYLO';
+$sender = 'noreply.textylo@gmail.com.mx';
+$senderName = 'Nuevo Contacto en textylo.com';
 $recipient = 'noreply.textylo@gmail.com';
 $recipient1 = 'pruebascorreosbb@gmail.com';
 $recipient2 = 'ventas01bb@gmail.com';
