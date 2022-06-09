@@ -173,3 +173,15 @@ $(document).ready(function() {
   
   window.addEventListener("scroll", reveal);
   /*TERMINA IMÁGENES QUE ENTRAN POR UN LADO */
+
+  /* CAPTCHA */
+  $('#form').submit(function (event) {
+    event.preventDefault();
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LdlllUgAAAAAPMPHUfbRrqTZ_ko7ceOt77c_dKr', { action: 'registro' }).then(function (token) {
+            $('#form').prepend('<input type="hidden" name="token" value="' + token + '">');
+            $('#form').prepend('<input type="hidden" name="action" value="registro">');
+            $('#form').unbind('submit').submit();
+        });
+    });
+});
