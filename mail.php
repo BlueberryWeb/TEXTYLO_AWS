@@ -43,48 +43,28 @@ $bodyHtml = '
   <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
     <tr>
       <td style="padding:0;">
-        <table role="presentation" style="font-family: , sans-serif; width:602px;border-collapse:collapse;border:0px solid #cccccc;border-spacing:0;text-align:left;">
+        <table role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; width:602px;border-collapse:collapse;border:0px solid #cccccc;border-spacing:0;text-align:left;">
           <tr>
-            <td align="left" style="font-family: , sans-serif; padding:10px 0 30px 0;">
+            <td align="left" style="font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;padding:10px 0 30px 0;">
             <img src="https://i.postimg.cc/VN79rVnD/logo-textylo-colores.gif" alt="TEXTYLO" width="200" style="height:auto;display:block; padding-top: 15px;" />
               <hr>
             </td>
           </tr>
           <tr>
-            <td style="font-family: , sans-serif; padding:0px 30px 42px 20px;">
-              <table role="presentation" style="font-family: , sans-serif; width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+            <td style="font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; padding:0px 30px 42px 20px;">
+              <table role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; width:100%;border-collapse:collapse;border:0;border-spacing:0;">
                 <tr>
-                  <td style="font-family: , sans-serif; padding:0 0 36px 0;color:#153643;">
-                  <img src="https://i.postimg.cc/k4Jn15MD/Nuevo-Contacto.png" alt="NUEVO CONTACTO" style="max-width: 500px; margin-left: 50px; margin-bottom: 60px; margin-top: 20px;"/>
-                  <center>
-                    <h4 style="margin:0 0 12px 0;font-size: 20px; text-align: center; font-family: , sans-serif;">Se ha capturado un nuevo lead en <b style="font-weight: 600; color: black;">TEXTYLO</b></h4>
+                  <td style="font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; padding:0 0 36px 0;color: #808080; ">
+                    <img src="https://i.postimg.cc/k4Jn15MD/Nuevo-Contacto.png" alt="NUEVO CONTACTO" style="max-width: 500px; margin-left: 50px; margin-bottom: 60px; margin-top: 20px;"/>
                     <ul style="color: #aba9a8; list-style: none; text-align: center;">
-                    <li style="margin-bottom: 10px;">Nombre: ' . $nombre . '</li>
-                    <li style="margin-bottom: 10px;">Correo electrónico: ' . $email . '</li>
-                    <li style="margin-bottom: 10px;">Teléfono:  ' . $telefono . '</li>
-                    <li style="margin-top: 40px;">Mensaje: ' . $mensaje . '</li>
-                </ul>
+                      <li><h4 style="margin:0 0 12px 0;font-size: 20px;  margin-bottom: 50px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Se ha capturado un nuevo lead <b style="font-weight: 600; color: black;">:</b></h4></li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Nombre: </b>' . $nombre . '</h4></li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Correo electrónico: </b>' . $email . '</h4></li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Teléfono: </b> ' . $telefono . '</h4</li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Mensaje: </b>' . $mensaje . ' </h4></li>
+                    </ul>
                   </td>
                 </tr>
-                
-                <tr>
-                      <td style="padding:0;">
-                        <table role="presentation" style="font-family: , sans-serif; width:100%;border-collapse:collapse;border:0;border-spacing:0;">
-                          <tr>
-                          <td style="padding:0;">
-                        <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0; font-family:, sans-serif;">
-                          <tr>
-                            <td style="width:260px;padding:0;vertical-align:top;color:#000000; font-family:, sans-serif;">
-                             
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                </center>
               </table>
             </td>
           </tr>
