@@ -56,7 +56,7 @@ $bodyHtml = '
                 <tr>
                   <td style="font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; padding:0 0 36px 0;color: #808080; ">
                     <img src="https://i.postimg.cc/50zq6K1v/Nuevo-Contacto-rosa-fuisha.gif" alt="NUEVO CONTACTO" style="max-width: 500px; margin-left: 50px; margin-bottom: 60px; margin-top: 20px;"/>
-                    <ul style="color: #aba9a8; list-style: none; text-align: center;">
+                    <ul style="color: #aba9a8; list-style: none;">
                       <li><h4 style="margin:0 0 12px 0;font-size: 20px;  margin-bottom: 50px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Se ha capturado un nuevo lead <b style="font-weight: 600; color: black;">:</b></h4></li>
                       <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Nombre: </b>' . $nombre . '</h4></li>
                       <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Correo electrónico: </b>' . $email . '</h4></li>
