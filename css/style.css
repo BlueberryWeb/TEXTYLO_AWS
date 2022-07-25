@@ -22,6 +22,9 @@
     font-family: 'Monserrat Semi-bold';
     src: url('fonts/Montserrat-SemiBold.ttf');
 }
+.grecaptcha-badge {
+    visibility: hidden;
+} 
 .regular{
     font-family: 'Monserrat Regular';
 }
